@@ -1,0 +1,71 @@
+# JSX
+'.source.js':
+  'div':
+    'prefix': 'div'
+    'body': """<div>
+                 $1
+               </div>$2"""
+  'ul':
+    'prefix': 'ul'
+    'body': """<ul>
+                 $1
+               </ul>$2"""
+  'li':
+    'prefix': 'li'
+    'body': "<li>$1</li>$2"
+  'header':
+    'prefix': 'header'
+    'body': """<header>
+                 $1
+               </header>$2"""
+  'div className':
+    'prefix': 'dcn'
+    'body': """<div className=\"${1:row}\">
+                 $2
+               </div>$3"""
+  'span':
+    'prefix': 'span'
+    'body': """<span>
+                 $1
+               </span>$2"""
+  'p':
+    'prefix': 'p'
+    'body': "<p>$1</p>$2"
+  'h1':
+    'prefix': 'h1'
+    'body': "<h1>$1</h1>$2"
+  'h2':
+    'prefix': 'h2'
+    'body': "<h2>$1</h2>$2"
+  'h3':
+    'prefix': 'h3'
+    'body': "<h3>$1</h3>$2"
+  'className':
+    'prefix': 'cn'
+    'body': "className=\"$1\"$2"
+  'ref':
+    'prefix': 'ref'
+    'body': "ref=\"$1\"$2"
+  'form':
+    'prefix': 'form'
+    'body': """<form onSubmit={this.${1:handleSubmit}}>
+                 $2
+               </form>$3"""
+  'form onSubmit':
+    'prefix': 'onSubmit'
+    'body': "onSubmit={this.${1:handleSubmit}}$2"
+  'form onChange':
+    'prefix': 'onChange'
+    'body': "onChange={this.${1:handleChange}}$2"
+  'input':
+    'prefix': 'input'
+    'body': "<input type=\"${1:text}\" ref=\"${2:ref}\" />$3"
+  'input type':
+    'prefix': 'type'
+    'body': "type=\"$1\"$2"
+  'onClick':
+    'prefix': 'oc'
+    'body': "onClick={this.$1.bind(this)}$2"
+  'onSubmit':
+    'prefix': 'os'
+    'body': "onSubmit={this.$1.bind(this)}$2"
